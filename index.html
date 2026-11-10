@@ -120,7 +120,7 @@ main{overflow-x:clip}
 .groom{left:11%;top:57%;width:22.5%;filter:drop-shadow(0 8px 8px rgba(40,50,20,.28))}
 .bride{left:57.5%;top:58.4%;width:35%;filter:drop-shadow(0 8px 8px rgba(40,50,20,.25))}
 
-.cflow{left:39.5%;top:62.5%;width:21%}
+.cflow{left:37.5%;top:56.5%;width:25%}
 .flan{left:37.5%;top:80.5%;width:25%;filter:drop-shadow(0 8px 10px rgba(40,40,20,.35))}
 .fgl{left:-3%;top:85%;width:42%}
 .fgr{left:61%;top:85%;width:42%;transform:scaleX(-1)}
@@ -153,6 +153,7 @@ main{overflow-x:clip}
   text-shadow:0 2px 24px rgba(60,72,52,.85),0 0 6px rgba(60,72,52,.45)}
 .eyebrow{filter:drop-shadow(0 0 5px rgba(48,62,44,.75)) drop-shadow(0 0 12px rgba(48,62,44,.5));font-family:var(--caps);font-size:2.9cqw;margin-bottom:1.2cqw;letter-spacing:.42em;text-transform:uppercase;padding-left:.42em;
   color:#fffdf7;text-shadow:0 1px 14px rgba(60,70,50,.8)}
+.nikah-date{margin-top:2cqw;font-family:var(--caps);font-size:3.2cqw;letter-spacing:.18em;text-transform:uppercase;padding-left:.18em;color:#fffdf7;font-weight:500;text-shadow:0 0 6px rgba(40,52,36,.95),0 0 14px rgba(40,52,36,.85),0 1px 2px rgba(30,40,26,.9)}
 .names{font-weight:400;line-height:.95}
 .names>span{display:block}
 .n1,.n2{font-family:var(--script);font-size:17.5cqw;color:#fffdf7;line-height:1.05}
@@ -172,10 +173,10 @@ main{overflow-x:clip}
 /* =========================================================
    Shared sections / cards
    ========================================================= */
-.sec{position:relative;padding:clamp(20px,5vw,50px) 16px;display:flex;justify-content:center}
+.sec{position:relative;padding:clamp(10px,3vw,28px) 5px;display:flex;justify-content:center}
 .paper{background:var(--ivory) var(--img-paper)}
 .paper-dark{background:var(--cream) var(--img-paper-dark)}
-.card{position:relative;width:min(100%,460px);
+.card{position:relative;width:min(100%,540px);
   border:6px solid transparent;border-image:linear-gradient(135deg,#E2CE9F,#B08A50 35%,#D9C08C 55%,#8C693B) 1;
   box-shadow:0 34px 60px -26px rgba(74,56,39,.45),0 10px 22px -8px rgba(74,56,39,.18);overflow:hidden;isolation:isolate}
 .card::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:9;
@@ -223,7 +224,7 @@ main{overflow-x:clip}
    4. COUNTDOWN
    ========================================================= */
 .sec-count{padding-top:clamp(20px,5vw,50px)}
-.board{position:relative;width:min(100%,440px);min-height:0;padding:190px 22px 150px;text-align:center;
+.board{position:relative;width:min(100%,520px);min-height:0;padding:190px 22px 150px;text-align:center;
   background:transparent !important;isolation:isolate}
 .board-edge{position:absolute;inset:0;z-index:-1;background:var(--cream) var(--img-paper-dark);filter:url(#rough);
   box-shadow:0 0 0 1px rgba(176,138,80,.25)}
@@ -421,7 +422,6 @@ main{overflow-x:clip}
 
     <div class="layer fore" data-speed="0.22">
       <img class="a cflow" data-k="cflow" alt="" alt="">
-      <img class="a flan" data-k="flan" alt="" alt="">
       <img class="a fgl" data-k="fgl" alt="" alt="">
       <img class="a fgr" data-k="fgl" alt="" alt="">
       <img class="a fgc" data-k="fgc" alt="" alt="">
@@ -444,6 +444,7 @@ main{overflow-x:clip}
         <span class="amp rv">&amp;</span>
         <span class="n2 rv" data-name="second"></span>
       </h1>
+      <p class="nikah-date rv">Nikah &bull; <span data-short-date></span></p>
     </div>
   </div>
   <div class="hero-fade"></div>
